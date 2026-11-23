@@ -26,7 +26,7 @@
 #                                                               #
 #################################################################
 
-#Crate a backup of the current saves
+# Create a backup of the current saves
  if [ -d "$TRIFORCE_SAVE/user_backup" ]; then # Searches for old backup direcotry
    rm "$TRIFORCE_SAVE/user_backup" -rf # Removes old backup directory if it was found
  fi
