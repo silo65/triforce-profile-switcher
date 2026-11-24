@@ -18,6 +18,7 @@ This is a bash script to swap save files for different user profiles for the OOT
 4.  Copy the 'triforce_achievements.txt' file located in the build directory to the base directory of your profile. It should be located at /home/{username}/Games/Triforce/triforce_achievements.txt if you built the game to the default location.
 5.  Create any additional profile folders you want. Inside the additional profiles, create a empty folders named 'user', 'user-2', and 'user-3' if that profile does not already have saves you want to copy to it.
 6.  Copy any additional achievement files to their respective profile folders. If the profile does not have any achievements yet, download the triforce_achievements.txt file from this repo and put it in the profile folder instead.
+#### NOTE: If you add a blank achievement file to any profile, it will automatically populate with all earned achievements when the save game is loaded if it is not a fresh game and achievements have already been earned.
 
 ### My folder structure looks like this:
 
