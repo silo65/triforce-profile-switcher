@@ -21,12 +21,12 @@ This is a bash script to swap save files for different user profiles for the OOT
   <summary>My profile saves directory tree</summary>
 
 ``` bash
-/home/deck/Triforce Legend of Zelda Ocarina of Time Saves
+/home/{user}/Triforce Legend of Zelda Ocarina of Time Saves
 ├── Launchers
-│   ├── triforce_dad.sh
-│   ├── triforce_ivory.sh
-│   ├── triforce_leander.sh
-│   ├── triforce_mom.sh
+│   ├── triforce_profile1.sh
+│   ├── triforce_profile2.sh
+│   ├── triforce_profile3.sh
+│   ├── triforce_profile4.sh
 ├── profile1
 │   ├── triforce_achievements.txt
 │   ├── user
