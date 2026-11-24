@@ -15,7 +15,11 @@ This is a bash script to swap save files for different user profiles for the OOT
 1.  In your home directory, create a new directory called "Triforce Legend of Zelda Ocarina of Time Saves"
 2.  Inside that directory, crate any profile directories you want. I created all 4 users in my house their own.
 3.  Copy your current save(s) (most likely located at /home/{username}/.local/share/triforce/) user, user-2, and user-3 directories to the new /home/{user}/Triforce Legend of Zelda Ocarina of Time Saves/{profile}/ directory. NOTE: If user-2 and user-3 do not exist in your ~/.local/share/triforce/ directory, create new empty directories inside the profile directory for them.
-4.  Create any additional profile folders you want. Inside the additional profiles, create a empty folders named 'user', 'user-2', and 'user-3' if that profile does not already have saves you want to copy to it. My folder structure looks like this:
+4.  Copy the 'triforce_achievements.txt' file located in the build directory to the base directory of your profile. It should be located at /home/{username}/Games/Triforce/triforce_achievements.txt if you built the game to the default location.
+5.  Create any additional profile folders you want. Inside the additional profiles, create a empty folders named 'user', 'user-2', and 'user-3' if that profile does not already have saves you want to copy to it.
+6.  Copy any additional achievement files to their respective profile folders. If the profile does not have any achievements yet, download the triforce_achievements.txt file from this repo and put it in the profile folder instead.
+
+### My folder structure looks like this:
 
 <details>
   <summary>My profile saves directory tree</summary>
@@ -159,6 +163,7 @@ This is a bash script to swap save files for different user profiles for the OOT
 │   │   └── triforce_card.txt
 │   └── user-3
 ├── profile2
+│   ├── triforce_achievements.txt
 │   ├── user
 │   │   ├── save
 │   │   │   └── 5a3c9e1f0b7d24680000000000000001
@@ -170,6 +175,7 @@ This is a bash script to swap save files for different user profiles for the OOT
 │   ├── user-2
 │   └── user-3
 ├── profile3
+│   ├── triforce_achievements.txt
 │   ├── user
 │   │   ├── prompts_auto.txt
 │   │   ├── save
@@ -236,6 +242,7 @@ This is a bash script to swap save files for different user profiles for the OOT
 │   ├── user-2
 │   └── user-3
 └── profile4
+    ├── triforce_achievements.txt
     ├── user
     ├── user-2
     └── user-3
