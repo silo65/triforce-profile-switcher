@@ -14,9 +14,8 @@ This is a bash script to swap save files for different user profiles for the OOT
 
 1.  In your home directory, create a new directory called "Triforce Legend of Zelda Ocarina of Time Saves"
 2.  Inside that directory, crate any profile directories you want. I created all 4 users in my house their own.
-3.  Copy your current save(s) (most likely located at /home/{username}/.local/share/triforce/) user, user-2, and user-3 directories to the new /home/{user}/Triforce Legend of Zelda Ocarina of Time Saves/{profile}/ directory.
-4.  If user-2 and user-3 do not exist in your ~/.local/share/triforce/ directory, create new empty directories inside the profile directory for them.
-5. Create any additional profile folders you want. Inside the additional profiles, create a empty folders named 'user', 'user-2', and 'user-3' if that profile does not already have saves you want to copy to it. My folder structure looks like this:
+3.  Copy your current save(s) (most likely located at /home/{username}/.local/share/triforce/) user, user-2, and user-3 directories to the new /home/{user}/Triforce Legend of Zelda Ocarina of Time Saves/{profile}/ directory. NOTE: If user-2 and user-3 do not exist in your ~/.local/share/triforce/ directory, create new empty directories inside the profile directory for them.
+4.  Create any additional profile folders you want. Inside the additional profiles, create a empty folders named 'user', 'user-2', and 'user-3' if that profile does not already have saves you want to copy to it. My folder structure looks like this:
 
 <details>
   <summary>My profile saves directory tree</summary>
