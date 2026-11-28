@@ -49,9 +49,9 @@
    if [[ -L "$TRIFORCE_SAVE/user" ]]; then # Checks if that directory is a link or an actual directory
      cp -fr --remove-destination "$(readlink $TRIFORCE_SAVE/user)" "$TRIFORCE_SAVE/saves_backup/user" # Creates a backup if a link
      rm "$TRIFORCE_SAVE/user" -rf # Removes current save directory so we can move the desired saves in
-     else
-       cp -fr "$TRIFORCE_SAVE/user" "$TRIFORCE_SAVE/saves_backup/user" # Creates a backup if not a link
-       rm "$TRIFORCE_SAVE/user" -rf
+   else
+     cp -fr "$TRIFORCE_SAVE/user" "$TRIFORCE_SAVE/saves_backup/user" # Creates a backup if not a link
+     rm "$TRIFORCE_SAVE/user" -rf
    fi
  fi
 
@@ -60,9 +60,9 @@
    if [[ -L "$TRIFORCE_SAVE/user-2" ]]; then # Checks if that directory is a link or an actual directory
      cp -fr --remove-destination "$(readlink $TRIFORCE_SAVE/user-2)" "$TRIFORCE_SAVE/saves_backup/user-2" # Creates a backup if a link
      rm "$TRIFORCE_SAVE/user-2" -rf # Removes current save directory so we can move the desired saves in
-     else
-       cp -fr "$TRIFORCE_SAVE/user-2" "$TRIFORCE_SAVE/saves_backup/user-2" # Creates a backup if not a link
-       rm "$TRIFORCE_SAVE/user-2" -rf
+   else
+     cp -fr "$TRIFORCE_SAVE/user-2" "$TRIFORCE_SAVE/saves_backup/user-2" # Creates a backup if not a link
+     rm "$TRIFORCE_SAVE/user-2" -rf
    fi
  fi
 
@@ -71,19 +71,20 @@
    if [[ -L "$TRIFORCE_SAVE/user-3" ]]; then # Checks if that directory is a link or an actual directory
      cp -fr --remove-destination "$(readlink $TRIFORCE_SAVE/user-3)" "$TRIFORCE_SAVE/saves_backup/user-3" # Creates a backup if a link
      rm "$TRIFORCE_SAVE/user-3" -rf # Removes current save directory so we can move the desired saves in
-     else
-       cp -fr "$TRIFORCE_SAVE/user-3" "$TRIFORCE_SAVE/saves_backup/user-3" # Creates a backup if not a link
-       rm "$TRIFORCE_SAVE/user-3" -rf
+    else
+     cp -fr "$TRIFORCE_SAVE/user-3" "$TRIFORCE_SAVE/saves_backup/user-3" # Creates a backup if not a link
+     rm "$TRIFORCE_SAVE/user-3" -rf
    fi
  fi
 
 
-## START SAVE SLOT 1 ACHIEVEMENT BACKUP ##
+ ## START SAVE SLOT 1 ACHIEVEMENT BACKUP ##
 
  # Check for old achievements file backup and remove if it exists
  if [ -f "$OOT/triforce_achievements.txt.bak" ]; then
    rm -f "$OOT/triforce_achievements.txt.bak"
  fi
+
 
  # Create a file tie the achievements file to a profile and manage it all
  if compgen -G "$OOT/tps_*" > /dev/null; then # Checks if the tps_ file exists
@@ -112,6 +113,6 @@
  ln -s "$PROFILE_SAVE/user" "$TRIFORCE_SAVE"
  ln -s "$PROFILE_SAVE/user-2" "$TRIFORCE_SAVE"
  ln -s "$PROFILE_SAVE/user-3" "$TRIFORCE_SAVE"
- 
+
 # Launch the program
 $OOT$RUN
